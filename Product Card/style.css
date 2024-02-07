@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  background-color: #bb89fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.4rem;
+}
+
+.container {
+  background-color: #fff;
+  width: 20rem;
+  margin: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav .top-left {
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav .top-left img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top-nav .top-right {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav .top-right a {
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+}
+
+.top-nav .top-right a i {
+  color: #bb89ff;
+}
+
+
+.mid-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-section img {
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+  outline: none;
+  margin: 1rem 0;
+  transition: all 0.3s linear;
+}
+
+.mid-section:hover img {
+  transform: scale(1.08);
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-shadow: 0 0 3px #555;
+  cursor: pointer;
+  margin-bottom: .3rem;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: .5rem;
+}
+
+.rating i {
+  cursor: pointer;
+  font-size: 13px;
+  color: #bb89ff;
+  margin-bottom: .3rem;
+}
+
+.price {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.price sup {
+  color: green;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 1rem 0;
+  border: none;
+  background-color: #bb89ff;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #aa77df;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Responisive Register & Login Page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <form action="POST" class="form-container">
+        <div class="top-content">
+          <h2>Register</h2>
+          <p>Create Your Account. it's free and only takes a minute.</p>
+        </div>
+        <div class="fl-name">
+          <input type="text" name="name" id="Name" placeholder="First Name">
+          <input type="text" name="lastname" id="LastName" placeholder="Last Name">
+        </div>
+        <div class="other-inputs">
+          <input class="input" type="email" name="email" id="Email" placeholder="Email">
+          <input class="input" type="password" name="password" id="Password" placeholder="Password">
+          <input class="input" type="password" name="email" id="Confirm-Password" placeholder="Confirm password">
+        </div>
+        <div class="chk">
+          <input type="checkbox" class="chkbox"><label class="trms" for="temsAndPolicy">I accept <span><a
+                href="termOfUse">Terms of
+                Use</a> & <a href="privacyPolicy">PrivacyPolicy.</a></span></label>
+        </div>
+        <input type="submit" id="Submit" name="submit" class="btn">
+      </form>
+      <div class="bottom-content-signup">
+        <p>Already have an account ? <a href="signin.html">Sign In</a></p>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.2rem;
+}
+
+
+/* Form Styling */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #EEEBD3;
+  width: 600px;
+  height: 700px;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: center;
+  border: 1px solid #E2DDB6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form .top-content {
+  margin-bottom: 40px;
+}
+
+.form .fl-name {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3px;
+  width: 99.5%;
+  margin-bottom: 8px;
+}
+
+.form .fl-name input {
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #BAAE4F;
+}
+
+.form .other-inputs {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px;
+  width: 100%;
+}
+
+.form .other-inputs input {
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #BAAE4F;
+  margin: 8px 0;
+}
+
+.form input:focus {
+  outline: 1px solid #938839;
+  box-shadow: 0 0 5px #A2963F;
+
+}
+
+.form .chkbox {
+  margin-right: 5px;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #766D2E;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 550;
+  text-shadow: 0 0 8px #EEEBD3;
+  background: #C6BB6C;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #CCC27B;
+}
+
+.bottom-content-signup a {
+  text-decoration: none;
+  margin: 20px 10px;
+  color: #292200;
+  text-shadow: 0 0 15px;
+  display: inline;
+}
+
+
+
+/* Responsive design */
+@media only screen and (max-width: 750px) {
+
+  .form {
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .form .top-content {
+    margin: 0;
+  }
+
+  .form .fl-name {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .form .fl-name input {
+    height: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .form .other-inputs input {
+    height: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #BAAE4F;
+    margin: 4px 0;
+  }
+
+  .form h2 {
+    font-size: 24px;
+  }
+
+  .form p {
+    font-size: 16px;
+  }
+
+
+  label {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #766D2E;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 550;
+    text-shadow: 0 0 8px #EEEBD3;
+    background: #C6BB6C;
+  }
+
+  .form .bottom-content p,
+  .form .bottom-content a {
+    font-size: 16px;
+  }
+
+  .form .chk-signin {
+    display: block;
+  }
+
+  .form .chk-signin input {
+    margin: 0 10px !important;
+  }
+
+  .form .bottom-content-signin p,
+  .form .bottom-content-signin a {
+    display: inline !important;
+  }
+
+  .form .other-inputs input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 15px !important;
+    border-radius: 5px;
+    border: 1px solid #BAAE4F;
+  }
+
+  .form .bottoms {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-top: 3px;
+  }
+
+  .form .bottoms .bottom-content-socials {
+    margin-bottom: 5px !important;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+  .form {
+    width: 90vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    ;
+  }
+
+  .form .top-content {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .form .fl-name {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+    width: 100%;
+  }
+
+
+  .form h2 {
+    font-size: 24px;
+  }
+
+  .form p {
+    font-size: 12px;
+  }
+
+
+  label {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .form .bottom-content p,
+  .form .bottom-content a {
+    font-size: 14px;
+  }
+
+
+}
+
+
+/* Login Styling */
+.form .other-inputs input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #BAAE4F;
+  margin: 8px 0;
+}
+
+.form .chk-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form .chk-signin input {
+  width: 20px;
+  margin: 10px 10px;
+
+}
+
+.form .bottoms {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .bottoms .bottom-content-socials {
+  margin-bottom: 30px;
+}
+
+
+.form .bottom-content-socials a {
+  text-decoration: none;
+  margin: 20px 20px;
+  color: #292200;
+  text-shadow: 0 0 15px;
+  display: inline;
+}
+
+.form .bottom-content-socials i {
+  margin-right: 5px;
+}
+
+.form .bottom-content-signin a {
+  text-decoration: none;
+  margin: 20px 10px;
+  color: #292200;
+  text-shadow: 0 0 15px;
+  display: inline;
+}
+
+.form .bottom-content-signin p {
+  display: block;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ubuntu', sans-serif;
+  background-color: rgb(123, 27, 123);
+  overflow: hidden;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#cards {
+  margin: 20rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 1rem 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-item {
+  padding: 1rem 1rem;
+  background-color: #ddd;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  transition: all .2s linear;
+}
+
+.card-item:hover {
+  transform: scale(1.04);
+}
+
+.card-item .content {
+  padding: 1rem 1rem;
+  line-height: 1.3;
+  margin-right: 2rem;
+  width: 22rem;
+}
+
+.card-item .content p {
+  color: #e4664e;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card-item .content .social a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  transition: all 0.2s linear;
+}
+
+.card-item .content .social a:hover {
+  color: #e4664e;
+}
+
+.card-item .img {
+  position: absolute;
+  right: 15px;
+  bottom: 22px;
+}
+
+.card-item .img img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}

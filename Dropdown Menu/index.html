@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DropDown Menu</title>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="left">
+        <h1>DropDown</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <label for="services"></label>
+          <li class="services" id="dropDown">
+            <a href="#" class="sub">Services <i class="fa fa-caret-down"></i></a>
+            <ul class="toggle">
+              <li><a href="#">Content Writing</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Youtube Management</a></li>
+              <li><a href="#">Social Media Management</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <input type="text" class="myinput">
+</body>
+<script src="script.js"></script>
+
+</html>
